@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
@@ -26,8 +27,8 @@ app.post('/contact/send', function(req, res){
 		port: 465,
     	secure: true, // use SSL
 		auth: {
-			user: 'nodemailer007@gmail.com',//enter email you want to send mail from,
-			pass: 'qddvvqqirwegpjsu'//enter passsword
+			user: process.env.USER_EMAIL,//enter email you want to send mail from,
+			pass: process.env.USER_PASS//enter passsword
 		},
 		tls:{
 			rejectUnauthorized: false,

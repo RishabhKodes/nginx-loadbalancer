@@ -1,22 +1,22 @@
 version: '3.2'
 services:
   backend1:
-      build: ./backend
+      build: ./webapp
       tty: true
       volumes:
-        - './backend/src:/backend-dir-inside-container'
+        - './webapp/src:/backend-dir-inside-container'
 
   backend2:
-      build: ./backend
+      build: ./webapp
       tty: true
       volumes:
-        - './backend/src:/backend-dir-inside-container'
+        - './webapp/src:/backend-dir-inside-container'
 
   backend3:
-      build: ./backend
+      build: ./webapp
       tty: true
       volumes:
-        - './backend/src:/backend-dir-inside-container'
+        - './webapp/src:/backend-dir-inside-container'
 
   loadbalancer:
       build: ./load-balancer
@@ -29,4 +29,4 @@ services:
           - '8080:8080'
 
 volumes:
-  backend:
+  webapp:
