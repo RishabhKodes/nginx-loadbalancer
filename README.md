@@ -21,7 +21,7 @@ This is a list of the major frameworks that were used in this project using:-
 ```sh
 git clone https://github.com/RishabhKodes/nginx-loadbalancer.git
 ```
-3. Run using docker-compose:
+2. Run using docker-compose:
 ```JS
 docker-compose up -d
 ```
