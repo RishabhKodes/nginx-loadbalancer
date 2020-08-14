@@ -4,10 +4,12 @@
 ## About The Project
 
 This is a demonstration of load-balancing using nginx, done on one of my previous projects [NodeMailer](https://github.com/RishabhKodes/NodeMailer). In this I have 3 secondary ports to run the server for the webapp, defined in the nginx.conf file. 
+
 If we have excess load on the primary port the traffic will be directed to any of the load-balancing ports with the help of nginx. Finally, the webapp and the nginx have been integrated on a single server using Docker, specifically Docker-Compose.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This is a list of the major frameworks that were used in this project using:-
+
 * [Nginx](https://www.nginx.com/)
 * [Docker](https://www.docker.com/get-started)
 
