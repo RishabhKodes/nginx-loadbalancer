@@ -49,7 +49,7 @@ Contributions are what make the open source community such an amazing place to b
 
 [LinkedIn](https://www.linkedin.com/in/rishabh-bhandari-ba5778168/)
 
-[Email](rishabhbhandari6@gmail.com)
+[rishabhbhandari6@gmail.com](rishabhbhandari6@gmail.com)
 
 [My Website](http://www.rishabhbhandari.me/)
 
