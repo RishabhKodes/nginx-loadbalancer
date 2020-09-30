@@ -10,6 +10,7 @@ This is a list of the major frameworks that were used in this project using:-
 
 * [Nginx](https://www.nginx.com/)
 * [Docker](https://www.docker.com/get-started)
+* [AWS](https://aws.amazon.com/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
