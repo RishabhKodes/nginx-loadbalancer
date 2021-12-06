@@ -1,33 +1,64 @@
+# version: '3.2'
+# services:
+# # backup servers
+#   backend1:
+#       build: ./webapp
+#       tty: true
+#       volumes:
+#         - './webapp/src:/backend-dir-inside-container'
+
+#   backend2:
+#       build: ./webapp
+#       tty: true
+#       volumes:
+#         - './webapp/src:/backend-dir-inside-container'
+
+#   backend3:
+#       build: ./webapp
+#       tty: true
+#       volumes:
+#         - './webapp/src:/backend-dir-inside-container'
+
+#   loadbalancer:
+#       build: ./load-balancer
+#       tty: true
+#       links:
+#           - backend1
+#           - backend2
+#           - backend3
+#       ports:
+#           - '8080:8080'
+
+# volumes:
+#   webapp:
+
+
 version: '3.2'
 services:
-# backup servers
   backend1:
       build: ./webapp
-      tty: true
-      volumes:
-        - './webapp/src:/backend-dir-inside-container'
+      ports:
+          - '3001:3000'
 
   backend2:
       build: ./webapp
-      tty: true
-      volumes:
-        - './webapp/src:/backend-dir-inside-container'
+      ports:
+          - '3002:3000'
 
   backend3:
       build: ./webapp
-      tty: true
-      volumes:
-        - './webapp/src:/backend-dir-inside-container'
+      ports:
+          - '3003:3000'
 
   loadbalancer:
       build: ./load-balancer
-      tty: true
-      links:
+      ports:
+          - '8080:80'
+      depends_on:
           - backend1
           - backend2
           - backend3
-      ports:
-          - '8080:8080'
 
-volumes:
-  webapp:
+
+
+

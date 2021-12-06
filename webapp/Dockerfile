@@ -1,4 +1,3 @@
-# Use a standard Node image from Docker Hub 
 FROM node:latest
 
 RUN mkdir -p /backend-dir-inside-container
@@ -11,6 +10,6 @@ ADD ./src /backend-dir-inside-container
 
 RUN  npm install
 
-EXPOSE 3000
+# EXPOSE 3000
 
 CMD  ["node", "app.js"]
